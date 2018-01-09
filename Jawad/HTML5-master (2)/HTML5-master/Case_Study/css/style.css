@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Mukta Regular'), local('Mukta-Regular'), url(https://fonts.gstatic.com/s/mukta/v5/q-tytnvlzg1nj8JgRZDYrw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Mukta Bold'), local('Mukta-Bold'), url(https://fonts.gstatic.com/s/mukta/v5/fT3IGEJzqWyj-25eZDPwIvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/* UNIVERSAL */
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+WEBSITE COLOUR SCHEME
+
+First colour: rgba(195, 168, 255, 1)
+Second colour: rgba(44, 31, 61, 1)
+Third colour: rgba(55, 42, 71, 1)
+Fourth colour: #444 - for main content text and heading
+*/
+
+/* MOBILE DEFAULT STYLES - GLOBAL STYLE */
+/*h1 {
+    color: blue;
+}*/
+
+img, video {
+    width: 100%;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+    font-size: 16px;
+    color: #444;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 100px auto;
+}
+
+.banner {
+    position: relative;
+    background-image: url(../img/trainerHomePage.jpg);
+    background-position: center 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    border-bottom: 15px solid rgba(53, 38, 80, 0.8);
+    background-attachment: fixed;
+}
+
+.logoC {
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    width: 45px;
+    z-index: 110;
+}
+
+.fa-shopping-basket {
+    font-size: 4em;
+    color: rgba(194, 166, 255, 1);
+}
+
+.cartIcon {
+    position: absolute;
+    top: 15px;
+    left: 45vw;
+    width: 45px;
+    z-index: 115;
+}
+
+.navC {
+    color: white;
+    height: auto;
+    width: 100%;
+    background-color: rgba(44, 31, 61, 1);
+    position: fixed;
+    border-bottom: 2px solid rgba(194, 166, 255, 1);
+    z-index: 100;
+}
+
+.navBtn {
+    font-size: 2.5em;
+    display: block;
+    width: 20%;
+    margin: 0 4vw 0 73vw;
+    padding: 7px 3%;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* MOBILE STYLES - 568px */
+@media screen and (min-width: 568px) {
+    h1 {
+        color: green;
+    }
+}
+
+
+/* MOBILE STYLES - 768px */
+@media screen and (min-width: 768px) {
+    h1 {
+        color: red;
+    }
+}
+
+
+/* MOBILE STYLES - 1024px */
+@media screen and (min-width: 1024px) {
+    h1 {
+        color: orange;
+    }
+}
+
+
+/* HOME STYLES - 1280px */
+@media screen and (min-width: 1280px) {
+    h1 {
+        color: purple;
+    }
+    
+    .desktopnav {
+        display: block;
+    }
+    
+    .menubutton {
+        display: none;
+    }
+    
+    .mobile-header {
+        display: none;
+    }
+}
